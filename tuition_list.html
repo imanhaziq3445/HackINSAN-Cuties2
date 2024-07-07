@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('IGCSE-Home-Tuition.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: #fff; /* Adjusted text color to white for better contrast */
+        }
+        .tuition-list {
+            list-style-type: none;
+            padding: 0;
+            width: 80%;
+            max-width: 800px;
+        }
+        .tuition-item {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .tuition-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .tuition-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 2px solid #343a40;
+            object-fit: cover;
+        }
+        .tuition-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ONLINE TUITION</h1>
+<h2 style="text-align: center; color: #fff;">Choose Your Subject Below</h2>
+
+<ul class="tuition-list">
+    <li class="tuition-item">
+        <img src="bahasa_melayu.png" alt="Bahasa Melayu Logo" class="tuition-logo">
+        <span class="tuition-name">Bahasa Melayu</span>
+    </li>
+    <li class="tuition-item">
+        <img src="english.png" alt="English Logo" class="tuition-logo">
+        <span class="tuition-name">English</span>
+    </li>
+    <li class="tuition-item">
+        <img src="mathematics.png" alt="Mathematics Logo" class="tuition-logo">
+        <span class="tuition-name">Mathematics</span>
+    </li>
+    <li class="tuition-item">
+        <img src="add_maths.png" alt="Add Maths Logo" class="tuition-logo">
+        <span class="tuition-name">Add Maths</span>
+    </li>
+    <li class="tuition-item">
+        <img src="biology.png" alt="Biology Logo" class="tuition-logo">
+        <span class="tuition-name">Biology</span>
+    </li>
+    <li class="tuition-item">
+        <img src="chemistry.png" alt="Chemistry Logo" class="tuition-logo">
+        <span class="tuition-name">Chemistry</span>
+    </li>
+    <li class="tuition-item">
+        <img src="physics.png" alt="Physics Logo" class="tuition-logo">
+        <span class="tuition-name">Physics</span>
+    </li>
+    <li class="tuition-item">
+        <img src="history.jpg" alt="History Logo" class="tuition-logo">
+        <span class="tuition-name">History</span>
+    </li>
+</ul>
+
+</body>
+</html>

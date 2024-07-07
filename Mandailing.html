@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent-Teacher Meeting Arrangement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('Parenticer.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"], input[type="tel"], input[type="datetime-local"], input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-top: 5px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus, input[type="tel"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Arrange Parent-Teacher Meeting</h1>
+</div>
+<div class="container">
+    <h2>Meeting Details</h2>
+    <form action="post_submission_handler.php" method="post">
+        <div class="form-group">
+            <label for="student_name">Student's Name</label>
+            <input type="text" id="student_name" name="student_name" required>
+        </div>
+        <div class="form-group">
+            <label for="parent_name">Parent's Name</label>
+            <input type="text" id="parent_name" name="parent_name" required>
+        </div>
+        <div class="form-group">
+            <label for="teacher_name">Teacher's Name</label>
+            <input type="text" id="teacher_name" name="teacher_name" required>
+        </div>
+        <div class="form-group">
+            <label for="meeting_datetime">Meeting Date & Time</label>
+            <input type="datetime-local" id="meeting_datetime" name="meeting_datetime" required>
+        </div>
+        <div class="form-group">
+            <label for="contact_number">Contact Number</label>
+            <input type="tel" id="contact_number" name="contact_number" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <input type="submit" value="Arrange Meeting">
+    </form>
+</div>
+</body>
+</html>

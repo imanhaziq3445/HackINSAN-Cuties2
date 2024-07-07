@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMA CLASSROOM</title>
+    <style>
+        /* General Reset and Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('32216-cityscape-building-HDR-long_exposure-Chicago.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            position: relative; /* Ensure positioning context for absolute positioning */
+        }
+
+        /* Heading Styles */
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 1.5em;
+            text-align: center;
+            max-width: 600px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* Button Styles */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .custom-button {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+        }
+        .custom-button:hover {
+            background-color: rgba(0, 86, 179, 0.9);
+            transform: translateY(-3px);
+        }
+
+        /* Sign Up and Log In Container */
+        .auth-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-end; /* Align buttons to the right */
+            background-color: rgba(0, 51, 102, 0.8); /* Semi-transparent dark blue */
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            gap: 10px;
+        }
+        .auth-button {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #343a40;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-transform: uppercase;
+        }
+        .auth-button:hover {
+            background-color: rgba(0, 86, 179, 0.8);
+            transform: translateY(-2px);
+            color: #fff;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 150px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .custom-button {
+                padding: 12px 24px;
+                font-size: 1em;
+            }
+            .auth-container {
+                padding: 10px;
+                gap: 5px;
+            }
+            .auth-button {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<img src="pemuda_gema.png" alt="GEMA Classroom Logo" class="logo">
+<div class="auth-container">
+    <button class="auth-button" onclick="window.location.href='sign_up.html'">Sign Up</button>
+    <button class="auth-button" onclick="window.location.href='log_in.html'">Log In</button>
+</div>
+<h1>GEMA CLASSROOM</h1>
+<h2>Website Made for Educating Unfortunate Children</h2>
+<div class="button-container">
+    <button class="custom-button" onclick="window.location.href='classroom_list.html'">Classrooms</button>
+    <button class="custom-button" onclick="window.location.href='tuition_list.html'">Online Tuitions</button>
+    <button class="custom-button" onclick="window.location.href='teacher_resources.html'">Teacher Resources</button>
+    <button class="custom-button" onclick="window.location.href='online_textbooks_grade.html'">Online Textbooks</button>
+    <button class="custom-button" onclick="window.location.href='Mandailing.html'">Parent-Teacher Meeting</button>
+</div>
+
+</body>
+</html>
